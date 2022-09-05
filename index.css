@@ -1,0 +1,59 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    height: 100%;
+    background-color: #F8FFF2;
+}
+h1 {
+    color: #00968B;
+}
+body
+{
+    margin: 0 auto;
+    padding: 1em;
+    min-height: 100%;
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+caption {
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+th {
+    color: #00968B;
+    padding: 0.25em 0.5em;
+}
+tr:nth-child(even) {
+    background-color: rgba(37, 149, 190, 0.196);
+}
+tr:nth-child(odd) {
+    background-color: rgba(235, 236, 237, 0.9);
+}
+.tr:hover {
+    background-color: #800000;
+    color: #FFCC5C;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #FFCC5C;
+}
+.customer {
+        padding: 1em 0;
+        text-align: right;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.table tfoot tr, .table thead tr
+{
+    text-align: left;
+}
+.table tfoot tr, .table .money
+{
+    text-align: right;
+}

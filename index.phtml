@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Bons de commandes</h1>
+    </header>
+    <main>
+        <table>
+            <caption>Liste des commandes</caption>
+            <thead>
+                <tr>
+                    <th>Numéro de la commande</th>
+                    <th>Date de commande</th>
+                    <th>Date de livraison</th>
+                    <th>Statut de la commande</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($orders as $order):?>
+                <tr class="tr">
+                    <td>
+                    <a href="orderDetails.php?orderNumber=<?= $order['orderNumber'] ?>"><?= $order['orderNumber'] ?></a>
+                    </td>
+                    <td><?= $order ['orderDate'] ?></td>
+                    <td><?= $order ['shippedDate'] ?></td>
+                    <td><?= $order ['status'] ?></td>
+                </tr>
+                <?php endforeach ?>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
